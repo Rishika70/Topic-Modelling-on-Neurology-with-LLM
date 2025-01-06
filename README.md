@@ -1,5 +1,11 @@
 # Topic-Modelling-on-Neurology-with-LLM
-The provided code implements a system for generating research prompts and analyzing documents related to neurology, incorporating several NLP techniques. Let's break down its components and compare it to traditional topic modeling:
+This project explores a novel approach to analyzing neurological research documents, combining chain-of-thought reasoning with multi-label categorization.  It leverages the power of Sentence Transformers and BERT for semantic understanding and similarity calculation. Unlike traditional topic modeling, which often relies on statistical distributions of words to identify topics, this method focuses on the semantic meaning of text. This approach allows for a more nuanced understanding of the relationships between research questions and document content.
+
+Traditional topic modeling techniques often struggle with identifying subtle relationships or specialized terminology within specific domains.  This project addresses this limitation by using sentence embeddings, capturing the semantic meaning of sentences rather than individual words.  This facilitates more accurate retrieval of relevant documents and enables a more refined analysis of complex research questions.
+
+The project defines research prompts across categories (Disease, Type, Treatment, Prevention, Technology, Policy, and Other) based on specific keywords, and provides a function that calculates semantic similarity between a given query and document excerpts. These similarities are then used to rank and summarize the most relevant documents for a specific research query.
+
+The project also explores using BERT embeddings for semantic analysis to calculate cosine similarity between the query and documents, offering an alternative method for comparison.
 
 **Code Functionality:**
 
